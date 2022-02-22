@@ -10,3 +10,8 @@ ENV MONGO_URL=mongodb://localhost:27017/productdb
 ADD ./target/  -0.0.1.SNAPSHOT.jar   usr/lib/product
 #run the jar file
 ENTRYPOINT["java","-jar","file name-SNAPSHOT "]
+
+
+
+
+https://myrepos.stackroute.niit.com/678119_Aman/bej_c2_s4_rest_api_mongodb_pc_4.1/-/tree/master/product
