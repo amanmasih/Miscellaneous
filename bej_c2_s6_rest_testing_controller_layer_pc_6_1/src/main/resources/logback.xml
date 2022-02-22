@@ -1,0 +1,23 @@
+<configuration>
+    <property name="LOG_FILE_LOCATION" value="logs"/>
+    <property name="LOG_FILE_NAME" value="ProductService"/>
+    <property name="LOG_FILE_EXTENSION" value=".log"/>
+    <timestamp key="bySecond"  datePattern="yyyyMMdd'T'HHmmss" timeReference="contextBirth"/>
+    <appender name="FILE_AUDIT" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_FILE_LOCATION}/${LOG_FILE_NAME}_${bySecond}${LOG_FILE_EXTENSION}</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n  </pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n  </pattern>
+        </encoder>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="FILE_AUDIT"/>
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
