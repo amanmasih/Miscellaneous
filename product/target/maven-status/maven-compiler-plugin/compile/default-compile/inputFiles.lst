@@ -1,9 +1,0 @@
-/home/ubuntu/Downloads/product/src/main/java/com/niit/product/Service/ProductServiceImpl.java
-/home/ubuntu/Downloads/product/src/main/java/com/niit/product/Model/Product.java
-/home/ubuntu/Downloads/product/src/main/java/com/niit/product/ProductApplication.java
-/home/ubuntu/Downloads/product/src/main/java/com/niit/product/Model/ProductDescription.java
-/home/ubuntu/Downloads/product/src/main/java/com/niit/product/Repository/ProductRepository.java
-/home/ubuntu/Downloads/product/src/main/java/com/niit/product/Exception/ProductAlreadyExistException.java
-/home/ubuntu/Downloads/product/src/main/java/com/niit/product/Service/ProductService.java
-/home/ubuntu/Downloads/product/src/main/java/com/niit/product/Controller/ProductController.java
-/home/ubuntu/Downloads/product/src/main/java/com/niit/product/Exception/ProductNotFoundException.java
