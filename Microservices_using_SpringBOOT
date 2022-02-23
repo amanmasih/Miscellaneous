@@ -1,0 +1,31 @@
+=====================================================================Microservices using SpringBoot==================================================================
+
+Monolithic Application:- A monolithic architecture is the traditional unified model for the design of a software program. Monolithic, in this context,
+                         means composed all in one piece.
+                         In a tightly-coupled architecture, each component and its associated components must be present in order for code to be executed or compiled.
+    -these are self contained and independent from each other computing application
+    -it is deployed as a single monolithic application , it has a single WAR file that runs on a web container(Tomcat)
+    -till now what we have created all application are monolithic 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
