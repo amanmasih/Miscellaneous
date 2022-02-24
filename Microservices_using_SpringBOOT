@@ -15,8 +15,47 @@ Monolithic Application:- A monolithic architecture is the traditional unified mo
 
 
 
+version: '3.3'
+services:
+  productservice:
+    image: product_image
+    container_name: productcontainers
+    build: product/
+    restart: always
+    network_mode: host
+    ports:
+      - 8090:8090
+    depends_on:
+      - mongo
+#this mango name is used in depends because productservice is dependent on mongo container
+  mongo:
+    image: mongo:3.2-jessie
+    container_name: mongocontainer1
+    ports:
+      - 27017:27017
+    network_mode: host
 
+  mysqlservice:
+    image: mysql:5.5
+    ports:
+      - 3306:3306
+    container_name: mysql-container
+    network_mode: host
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USERNAME: user
+      MYSQL_PASSWORD: root
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
 
+  authenticationservice:
+    container_name: authenticationcontainer
+    image: authenticationimage
+    network_mode: host
+    build: authenticationservice/
+    ports:
+      - 8085:8085
+    depends_on:
+      - mysqlservice
 
 
 
